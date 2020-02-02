@@ -13,4 +13,6 @@ selected(feature: string){
     this.featureSelected.emit(feature);
   }
 
+  collapsed = true;
+
 }
