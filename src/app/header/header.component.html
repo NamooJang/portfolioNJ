@@ -2,12 +2,12 @@
     <div class="dontainer-fluid col-xl">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle btn btn-dark col-xl" (click)="collapsed = !collapsed">
-              <!-- <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]">menu</span> -->
+              <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]">menu</span>
               <span routerLink="/">NJ</span>
             </button>
         </div>
 
-        <div class="navbar-collapse">
+        <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
             <ul class="nav navbar-nav flex-row">
                 <li class="nav-item">
                     <a href="#" class="btn btn-light active" (click)="selected('frontEnd', $event)">FrontEnd</a>
