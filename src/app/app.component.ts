@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolioNJ';
+
+  loadedFeature = 'frontEnd';  
+
+  onNavigate(feature: string){
+    this.loadedFeature = feature;
+  }
 }
