@@ -12,7 +12,14 @@
   <!-- Web Publishing -->
   <div class="row">
     <div class="col-lg-12">
-      <app-publishing  *ngIf="loadedFeature !== 'frontEnd'"></app-publishing>
+      <app-publishing  *ngIf="loadedFeature === 'publishing'"></app-publishing>
+    </div>
+  </div>
+
+  <!-- learning -->
+  <div class="row">
+    <div class="col-lg-12">
+      <app-learning  *ngIf="loadedFeature === 'learning'"></app-learning>
     </div>
   </div>
 </div>

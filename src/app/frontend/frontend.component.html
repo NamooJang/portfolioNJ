@@ -1,4 +1,4 @@
-<h2>Front-End develop Toy Project</h2>
+<h2>Front-End Toy Project</h2>
 <input type="hidden" #selection>
 
 <div class="card-container">   
@@ -14,11 +14,17 @@
 
 <!-- Terminal -->
 <div class="terminal" [ngSwitch]="selection.value">
-  <pre *ngSwitchDefault> <iframe src="https://todo-project-nj.firebaseapp.com/" frameborder="0" width="100%" height="100%"></iframe></pre>
-  <pre *ngSwitchCase="'material'"><iframe src="http://www.seungjineng.co.kr/main/" frameborder="0"></iframe></pre>
-  <pre *ngSwitchCase="'dependency'">ng add _____</pre>
-  <pre *ngSwitchCase="'test'">ng test</pre>
-  <pre *ngSwitchCase="'build'">ng build --prod</pre>
+  <div *ngSwitchDefault> 
+    <iframe src="https://todo-project-nj.firebaseapp.com/" frameborder="0" width="100%" height="100%"></iframe>
+    <hr>
+    <div class="col-md">
+      Angular 8, Angular CLI, firebase
+    </div>
+  </div>
+  <div *ngSwitchCase="'material'"><iframe src="http://www.seungjineng.co.kr/main/" frameborder="0"></iframe></div>
+  <div *ngSwitchCase="'dependency'">ng add _____</div>
+  <div *ngSwitchCase="'test'">ng test</div>
+  <div *ngSwitchCase="'build'">ng build --prod</div>
 </div>
 
 <!-- Next Steps -->

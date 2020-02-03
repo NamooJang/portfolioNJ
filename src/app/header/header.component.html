@@ -1,21 +1,30 @@
-<nav class="navbar navbar-default justify-content-center">
-    <div class="dontainer-fluid col-xl">
+<!-- <nav class="navbar navbar-default">
+    <div class="dontainer-fluid">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle btn btn-dark col-xl" (click)="collapsed = !collapsed">
-              <!-- <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]">menu</span> -->
+            <button type="button" class="navbar-toggle btn btn-dark" (click)="collapsed = !collapsed">
               <span routerLink="/">NJ</span>
             </button>
         </div>
 
         <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
-            <ul class="nav navbar-nav flex-row">
-                <li class="nav-item">
-                    <a href="#" class="btn btn-light active" (click)="selected('frontEnd', $event)">FrontEnd</a>
+            <ul class="nav flex-column">
+                <li>
+                    <a href="#" class="nav-link active" (click)="selected('frontEnd', $event)">FrontEnd</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#"  class="btn btn-light" (click)="selected('WebPublishing', $event)">Web Publishing</a>
+                <li>
+                    <a href="#" class="nav-link" (click)="selected('WebPublishing', $event)">Web Publishing</a>
                 </li>
             </ul>
         </div>
     </div>
+</nav> -->
+
+
+<nav class="nav flex-column">
+    <div class="info">
+        <span>NJ Namee Jang</span>
+    </div>
+    <a class="nav-link active" href="#"  (click)="selected('frontEnd', $event)">FrontEnd</a>
+    <a class="nav-link" href="#" (click)="selected('publishing', $event)">Web Publishing</a>
+    <a class="nav-link" href="#" (click)="selected('learning', $event)">Leaning</a>
 </nav>

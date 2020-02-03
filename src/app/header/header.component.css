@@ -1,0 +1,32 @@
+nav{
+    float: left;
+    background-color: #24292E;
+    padding-bottom:100%;
+    width:20%;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover,
+a:visited {
+font-weight: 900;
+}
+
+.info{
+    background-color: #ddd;
+    text-align: center;
+}
+
+span{
+    color:#24292E;
+    font-size: 20px;
+    font-weight: 900;
+    height: 40px;
+    line-height: 40px;
+}
