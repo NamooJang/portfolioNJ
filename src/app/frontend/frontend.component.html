@@ -2,13 +2,13 @@
 <input type="hidden" #selection>
 
 <div class="card-container">   
-  <div class="card card-small" (click)="selection.value = 'component'" tabindex="0">
+  <div class="card" (click)="selection.value = 'component'" tabindex="0">
     <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
     <span>Todo List</span>
   </div>
-  <div class="card card-small" (click)="selection.value = 'material'" tabindex="0">
+  <div class="card" (click)="selection.value = 'material'" tabindex="0">
     <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-    <span>Todo List</span>
+    <span>javascript Web Game</span>
   </div>
 </div>
 
@@ -21,10 +21,14 @@
       Angular 8, Angular CLI, firebase
     </div>
   </div>
-  <div *ngSwitchCase="'material'"><iframe src="http://www.seungjineng.co.kr/main/" frameborder="0"></iframe></div>
-  <div *ngSwitchCase="'dependency'">ng add _____</div>
-  <div *ngSwitchCase="'test'">ng test</div>
-  <div *ngSwitchCase="'build'">ng build --prod</div>
+
+  <div *ngSwitchCase="'material'">
+    <iframe src="https://nj90.github.io/web_game_with_js/" frameborder="0" width="100%" height="100%"></iframe>    
+    <hr>
+    <div class="col-md">
+      HTML, Bootstrap, github
+    </div>
+  </div>
 </div>
 
 <!-- Next Steps -->
