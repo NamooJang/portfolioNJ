@@ -27,3 +27,8 @@ font-weight: 900;
 }
 .info a{color:#999; font-weight: 700;}
 .info a:hover{color:#666;}
+
+hr{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

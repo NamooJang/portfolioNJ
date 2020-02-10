@@ -15,19 +15,19 @@
 <!-- Terminal -->
 <div class="terminal" [ngSwitch]="selection.value">
   <div *ngSwitchDefault> 
-    <iframe src="https://todo-project-nj.firebaseapp.com/" frameborder="0" width="100%" height="100%"></iframe>
-    <hr>
-    <div class="col-md">
+    <h4 class="col-md">
       Angular 8, Angular CLI, firebase
-    </div>
+    </h4>
+    <hr>
+    <iframe src="https://todo-project-nj.firebaseapp.com/" frameborder="0" width="100%" height="100%"></iframe>
   </div>
 
   <div *ngSwitchCase="'material'">
-    <iframe src="https://nj90.github.io/web_game_with_js/" frameborder="0" width="100%" height="1000px"></iframe>    
-    <hr>
-    <div class="col-md">
+    <h4 class="col-md row-1">
       HTML, CSS, Javascript, Bootstrap, github
-    </div>
+    </h4>
+    <hr>
+    <iframe src="https://nj90.github.io/web_game_with_js/" frameborder="0" width="100%" height="1000px"></iframe>    
   </div>
 </div>
 
