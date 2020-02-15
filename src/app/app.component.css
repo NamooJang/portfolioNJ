@@ -1,0 +1,12 @@
+a,
+a:visited,
+a:hover {
+  color: #24292E;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover,
+a:visited {
+font-weight: 900;
+}

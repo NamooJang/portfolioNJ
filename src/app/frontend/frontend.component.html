@@ -1,24 +1,34 @@
-<h2>Front-End develop Toy Project</h2>
+<h2>Front-End Toy Project</h2>
 <input type="hidden" #selection>
 
 <div class="card-container">   
-  <div class="card card-small" (click)="selection.value = 'component'" tabindex="0">
+  <div class="card" (click)="selection.value = 'component'" tabindex="0">
     <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
     <span>Todo List</span>
   </div>
-  <div class="card card-small" (click)="selection.value = 'material'" tabindex="0">
+  <div class="card" (click)="selection.value = 'material'" tabindex="0">
     <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-    <span>Todo List</span>
+    <span>javascript Web Game</span>
   </div>
 </div>
 
 <!-- Terminal -->
 <div class="terminal" [ngSwitch]="selection.value">
-  <pre *ngSwitchDefault> <iframe src="https://todo-project-nj.firebaseapp.com/" frameborder="0" width="100%" height="100%"></iframe></pre>
-  <pre *ngSwitchCase="'material'"><iframe src="http://www.seungjineng.co.kr/main/" frameborder="0"></iframe></pre>
-  <pre *ngSwitchCase="'dependency'">ng add _____</pre>
-  <pre *ngSwitchCase="'test'">ng test</pre>
-  <pre *ngSwitchCase="'build'">ng build --prod</pre>
+  <div *ngSwitchDefault> 
+    <h4 class="col-md">
+      Angular 8, Angular CLI, firebase
+    </h4>
+    <hr>
+    <iframe src="https://todo-project-nj.firebaseapp.com/" frameborder="0" width="100%" height="100%"></iframe>
+  </div>
+
+  <div *ngSwitchCase="'material'">
+    <h4 class="col-md row-1">
+      HTML, CSS, Javascript, Bootstrap, github
+    </h4>
+    <hr>
+    <iframe src="https://nj90.github.io/web_game_with_js/" frameborder="0" width="100%" height="1000px"></iframe>    
+  </div>
 </div>
 
 <!-- Next Steps -->

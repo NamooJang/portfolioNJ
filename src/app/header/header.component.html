@@ -1,21 +1,16 @@
-<nav class="navbar navbar-default justify-content-center">
-    <div class="dontainer-fluid col-xl">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle btn btn-dark col-xl" (click)="collapsed = !collapsed">
-              <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]">menu</span>
-              <span routerLink="/">NJ</span>
-            </button>
-        </div>
 
-        <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
-            <ul class="nav navbar-nav flex-row">
-                <li class="nav-item">
-                    <a href="#" class="btn btn-light active" (click)="selected('frontEnd', $event)">FrontEnd</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#"  class="btn btn-light" (click)="selected('WebPublishing', $event)">Web Publishing</a>
-                </li>
-            </ul>
+<nav class="nav flex-column" >
+    <div class="info card">
+        <div class="card-body">
+          <h5 class="card-title">NJ</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Front-End Developer</h6>
+          <p class="card-text">HTML, CSS, Javascript, jQuery, Angular, github, firebase</p>
+          <hr>
+          <a href="https://github.com/NJ90" class="card-link btn btn-outline-dark" target="_blank">github</a>
+          <a href="https://www.notion.so/Dev-aa7efb5154144ac9b14dfc2fd9659794" class="card-link btn btn-outline-dark" target="_blank">notion</a>
         </div>
-    </div>
+    </div>    
+    <a class="nav-link active" href="#"  (click)="selected('frontEnd')">FrontEnd</a>
+    <a class="nav-link" href="#" (click)="selected('publishing')">Web Publishing</a>
+    <a class="nav-link" href="#" (click)="selected('board', $event)">Leaning</a>
 </nav>
