@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { PublishingComponent } from './publishing/publishing.component';
 import { FrontendComponent } from './frontend/frontend.component';
 import { HeaderComponent } from './header/header.component';
-import { LearningComponent } from './learning/learning.component';
+import { BoardComponent } from './board/board.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { LearningComponent } from './learning/learning.component';
     PublishingComponent,
     FrontendComponent,
     HeaderComponent,
-    LearningComponent
+    BoardComponent
   ],
   imports: [
     BrowserModule

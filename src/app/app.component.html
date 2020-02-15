@@ -4,22 +4,22 @@
 <div role="main">
   <!-- Front-End develop -->
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-10">
       <app-frontend  *ngIf="loadedFeature === 'frontEnd'"></app-frontend>
     </div>
   </div>
  
   <!-- Web Publishing -->
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-10">
       <app-publishing  *ngIf="loadedFeature === 'publishing'"></app-publishing>
     </div>
   </div>
 
-  <!-- learning -->
+  <!-- board -->
   <div class="row">
-    <div class="col-lg-12">
-      <app-learning  *ngIf="loadedFeature === 'learning'"></app-learning>
+    <div class="col-lg-10">
+      <app-board  *ngIf="loadedFeature === 'board'"></app-board>
     </div>
   </div>
 </div>
