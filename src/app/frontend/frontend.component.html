@@ -1,80 +1,22 @@
-<h2>Front-End Toy Project</h2>
-<input type="hidden" #selection>
+<h2 class="title">Front-End Toy Project</h2>
 
-<div class="card-container">   
-  <div class="card" (click)="selection.value = 'component'" tabindex="0">
-    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-    <span>Todo List</span>
+<div class="card-container" >
+  <div class="card">
+    <a target="_blank" rel="noopener" href="https://todo-project-nj.firebaseapp.com/">
+      <i class="material-icons md-48">face</i><h4>Todo List</h4>
+      <span>
+        Angular 8, Angular CLI, firebase
+      </span>
+    </a>
   </div>
-  <div class="card" (click)="selection.value = 'material'" tabindex="0">
-    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-    <span>javascript Web Game</span>
+
+  <div class="card" >
+    <a target="_blank" rel="noopener" href="https://nj90.github.io/web_game_with_js/">
+      <h4>javascript Web Game</h4>
+      <span>
+        HTML, CSS, Javascript, Bootstrap, github
+      </span>
+    </a>
   </div>
+
 </div>
-
-<!-- Terminal -->
-<div class="terminal" [ngSwitch]="selection.value">
-  <div *ngSwitchDefault> 
-    <h4 class="col-md">
-      Angular 8, Angular CLI, firebase
-    </h4>
-    <hr>
-    <iframe src="https://todo-project-nj.firebaseapp.com/" frameborder="0" width="100%" height="100%"></iframe>
-  </div>
-
-  <div *ngSwitchCase="'material'">
-    <h4 class="col-md row-1">
-      HTML, CSS, Javascript, Bootstrap, github
-    </h4>
-    <hr>
-    <iframe src="https://nj90.github.io/web_game_with_js/" frameborder="0" width="100%" height="1000px"></iframe>    
-  </div>
-</div>
-
-<!-- Next Steps -->
-<!-- <h2>Next Steps</h2>
-<p>What do you want to do next with your app?</p>
-
-<input type="hidden" #selection>
-
-<div class="card-container">
-  <div class="card card-small" (click)="selection.value = 'component'" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-
-    <span>New Component</span>
-  </div>
-
-  <div class="card card-small" (click)="selection.value = 'material'" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-
-    <span>Angular Material</span>
-  </div>
-
-  <div class="card card-small" (click)="selection.value = 'dependency'" tabindex="0">
-    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-
-    <span>Add Dependency</span>
-  </div>
-
-  <div class="card card-small" (click)="selection.value = 'test'" tabindex="0">
-    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-
-    <span>Run and Watch Tests</span>
-  </div>
-
-  <div class="card card-small" (click)="selection.value = 'build'" tabindex="0">
-    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-
-    <span>Build for Production</span>
-  </div>
-</div> -->
-
-<!-- Terminal -->
-<!-- <div class="terminal" [ngSwitch]="selection.value">
-    <pre *ngSwitchDefault>ng generate component xyz</pre>
-    <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
-    <pre *ngSwitchCase="'dependency'">ng add _____</pre>
-    <pre *ngSwitchCase="'test'">ng test</pre>
-    <pre *ngSwitchCase="'build'">ng build --prod</pre>
-</div> -->
-

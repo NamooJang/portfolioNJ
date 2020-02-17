@@ -7,16 +7,19 @@ import { FrontendComponent } from './frontend/frontend.component';
 import { HeaderComponent } from './header/header.component';
 import { BoardComponent } from './board/board.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
     PublishingComponent,
     FrontendComponent,
     HeaderComponent,
-    BoardComponent
+    BoardComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
