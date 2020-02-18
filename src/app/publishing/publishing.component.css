@@ -1,9 +1,12 @@
 .card h4{}
-.card dl{ display:inline-block;
+.card dl, dt, dd{ display:inline-block;
 }
 
-.card img{
-  display: block;
-  width:30%;
-  float: right;
-}
+.card img{ display: block; width:30%; height:auto; float: right;}
+.txt{float: left;}
+.btn{border:1px solid #666; font-size: 24px; font-weight: 600; color:#666; display: inline-block;}
+.btn:hover,
+.card:hover .btn{color:#fff; background-color: #666;}
+
+.icon{margin:10px 0; display: flex; align-items: end;}
+.icon .material-icons{margin:0 5px;}

@@ -108,20 +108,14 @@ hr{
   border: 1px solid #eee;
   background-color: #fafafa;
   height: auto;
-  margin: 0 8px 16px;
+  margin: 8px;
   padding: 16px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   transition: all 0.2s ease-in-out;
   line-height: 24px;
 }
 
-
-/* .card-container .card:not(:last-child) {
-  margin-right: 0;
-} */
 
 
 .card-container .card:not(.highlight-card) {
@@ -153,6 +147,7 @@ hr{
 
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
+.material-icons.md-28 { font-size: 28px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 
