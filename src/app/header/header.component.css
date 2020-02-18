@@ -27,9 +27,11 @@ hr{margin-top: 1rem; margin-bottom: 1rem;}
 
     /* Responsive Styles */
     @media screen and (max-width: 767px) {
+      .nav-link-wrap{width:100%; margin-top:0;}
       .nav{flex-direction: row; width: 100%; padding-bottom: 0;}
-      .nav-link{float: left; width:calc(100%/3 - 10px); margin:0 5px; line-height: 40px;}
+      .nav-link{float: left; width:calc(100%/3 - 10px); margin:0 5px; line-height: 40px; text-align: center;}
       .nav-link a{line-height: 16px;}
+      .material-icons{display: none;}
     }
   
     @media screen and (max-width: 575px) {
