@@ -2,17 +2,17 @@
 <app-header (featureSelected)="onNavigate($event)"></app-header>
 
 <div role="main">
-  <!-- Front-End develop -->
-  <div class="row">
-    <div class="col-lg-10">
-      <app-frontend  *ngIf="loadedFeature === 'frontEnd'"></app-frontend>
-    </div>
-  </div>
- 
   <!-- Web Publishing -->
   <div class="row">
     <div class="col-lg-10">
       <app-publishing  *ngIf="loadedFeature === 'publishing'"></app-publishing>
+    </div>
+  </div>
+
+  <!-- Front-End develop -->
+  <div class="row">
+    <div class="col-lg-10">
+      <app-frontend  *ngIf="loadedFeature === 'frontEnd'"></app-frontend>
     </div>
   </div>
 
