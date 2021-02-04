@@ -22,7 +22,7 @@
 
     .card-container > *:not(.circle-link) ,
     .terminal {
-      width: 100%;
+      width: calc(100%-16px);
     }
 
 
