@@ -16,3 +16,21 @@
 .card dt.blank::before{display: none;}
 .card dt:first-child{margin-top: 0;}
 .card dd{padding-left: 10px;}
+
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+
+    .card-container > *:not(.circle-link) ,
+    .terminal {
+      width: 100%;
+    }
+
+
+  }
+
+  @media screen and (max-width: 575px) {
+    .card-container > *:not(.circle-link) ,
+    .terminal {
+      width: 100%;
+    }
+  }
